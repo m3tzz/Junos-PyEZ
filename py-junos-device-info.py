@@ -1,7 +1,3 @@
-# Code for 'CLI to Py' blog post by @davidjohngee
-# Please adhere to Juniper's license terms and Jeremy's teams good will!
-
-# This code imports required classes from PyEZ, pprint and our interactive code shell requirement so we can tinker.
 from pprint import pprint
 from jnpr.junos import Device
 from jnpr.junos.op.ethport import EthPortTable
