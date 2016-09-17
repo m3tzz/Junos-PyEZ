@@ -6,7 +6,7 @@ dev.open()
 
 tbl = RouteTable(dev)
 tbl.get()
-#tbl.get('10.13.10.0/23', protocol='static')
+
 print tbl
 for item in tbl:
     print 'protocol:', item.protocol
