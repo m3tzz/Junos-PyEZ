@@ -90,16 +90,12 @@ class NetworkRequirements(object):
 if __name__ == '__main__':
 
     # Create our device object and assign the hostname or IP address, username and password
-    dev1 = Device(host='x.x.x.x', user='demo', password='demo')
+    dev1 = Device( host='x.x.x.x', user='demo', password='demo' )
 
     # Open a connection to the device. Please note, we're doing some very simple exception handling!
-    try:
-        dev1.open()
-    except:
-        print "Error Will Robinson, error"
+    dev1.open()
 
     # Let's create our object and initialise it
-
     SRX01 = NetworkRequirements(dev1.facts['RE0']['up_time'], dev1.facts['version'], dev1.facts['serialnumber'], dev1.facts['hostname'], dev1.facts['model'], dev1)
 
     # Now let's see if our class works and print out the data! Once we call this special class function, the string is returned as expected.

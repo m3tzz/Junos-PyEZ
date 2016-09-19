@@ -30,8 +30,7 @@ print "\n-----------------------------------------------------------------------
 print style.BOLD + "Chassis Installed FPC Details " + style.END
 fpcs = FpcHwTable(dev)
 fpcs.get()
-print fpcs
-
+#print fpcs
 for fpc in fpcs:
          print fpc.key," Description:", fpc.desc, "Model:", fpc.model,"Serial:", fpc.sn, "Part-number:", fpc.pn
 
@@ -41,8 +40,7 @@ print "\n-----------------------------------------------------------------------
 print  style.BOLD + "Device FPC Status Details " + style.END
 jfpcs = FpcInfoTable(dev)
 jfpcs.get()
-print jfpcs
-
+#print jfpcs
 for item in jfpcs:
         print "Slot:", item.key,  "State:", item.state, "Memory Util%:", item.memory, "CPU%:", item.cpu
 

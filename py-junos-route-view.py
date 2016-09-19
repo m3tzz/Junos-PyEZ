@@ -12,5 +12,6 @@ for item in tbl:
     print 'protocol:', item.protocol
     print 'age:', item.age
     print 'via:', item.via
+    print 'nexthop:', item.nexthop
     print
 dev.close()
