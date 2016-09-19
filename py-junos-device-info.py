@@ -38,15 +38,8 @@ class NetworkRequirements(object):
         # Then we call '.get()' to populate the table.
         self._device.eth_ports.get()
 
-        # The beauty of this now, is that we have bound a table to the dev1 itself and we can pass
-        # the same device to another function or class to do something else.
 
     def __str__(self):
-        # This is our special print function which returns a string (text) version of the object.
-        # We need to build our text up and structure it. We do this by appending the required text to a variable
-        # which we've called 'return_string'.
-        # n is a special sequence to insert a new line and t (can you guess?) is a tab.
-        # Once our string is complete, we 'return' it to the caller.
 
         x = 0
         return_string = ''
@@ -82,11 +75,6 @@ class NetworkRequirements(object):
         return return_string
 
 
-# This is our 'pyez_main' code and entry point. We do this so code is reusable.
-# For example, if we want to import any class or function we've defined in this file, but not execute
-# any code that does something, then this facilitates that (if that makes sense?)
-# Our __main__ code is executed if this file is executed first.
-
 if __name__ == '__main__':
 
     # Create our device object and assign the hostname or IP address, username and password
@@ -102,13 +90,4 @@ if __name__ == '__main__':
 
     print SRX01
 
-    # Now dump in to the interactive shell
-    #print "nnWelcome to the interactive shell"
-    #code.interact(local=locals())
-
-
-    # Remember to close the connection before exiting from the interactive Python shell
-
-    # Execute the below:
     dev1.close()
-    #exit()
