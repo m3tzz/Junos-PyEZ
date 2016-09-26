@@ -11,5 +11,4 @@ Junos PyEZ is a microframework for Python that enables you to remotely manage an
 Requirements:
 
 -->Flask
--->Python
 -->Junos-PyEZ
