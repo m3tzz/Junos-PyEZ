@@ -1,5 +1,5 @@
 
-nodes_info = ['10.40.23.52 SRXFW1','2.2.2.2 SRXFW2','3.3.3.3 SRXFW3']
+nodes_info = ['1.1.1.1 SRXFW1','2.2.2.2 SRXFW2','3.3.3.3 SRXFW3']
 
 
 def list_switches():

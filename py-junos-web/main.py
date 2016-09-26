@@ -48,7 +48,7 @@ def display_device_info():
     #try:
         print "TUDO LA DENTRO!!"
         print request.form.get("ip")
-        result = PyEZ.return_NetworkRequirements('10.40.23.52')
+        result = PyEZ.return_NetworkRequirements('1.1.1.1')
         return render_template('display-device-info.html' , output=result )
     #except:
     #     return render_template('display-device-info.html' , output="FODEU-SE")
@@ -58,8 +58,8 @@ def display_device_info():
 def display_fpc_info():
     #try:
         print "TUDO LA DENTRO OH FPC!!"
-        result_Chassis = PyEZ.return_FPC_Chassis_info('10.40.23.52')
-        result_Status = PyEZ.return_FPC_Status_info('10.40.23.52')
+        result_Chassis = PyEZ.return_FPC_Chassis_info('1.1.1.1')
+        result_Status = PyEZ.return_FPC_Status_info('1.1.1.1')
         return render_template('display-fpc-info.html' , output=result_Chassis  , output2=result_Status )
     #except:
     #     return render_template('display-device-info.html' , output="FODEU-SE")
@@ -70,7 +70,7 @@ def display_fpc_info():
 def display_all_cfg():
     #try:
         print "TUDO LA DENTRO OH CFG!!"
-        result = PyEZ.return_all_config('10.40.23.52')
+        result = PyEZ.return_all_config('1.1.1.1')
         return render_template('display-all-cfg.html' , output=result )
     #except:
     #     return ren
