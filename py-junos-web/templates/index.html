@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Juniper Junos PyEZ</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="container">
+  <header>
+    <h1>Juniper Networks Automation</h1>
+  </header>
+  <nav>
+    <ul>
+    <li>
+      <form method="post">
+        <label><b>Devices:</b></label><select name="ip" required>
+          {% for dev in nodes_info %}
+          <option value="{{dev.ip}}"> {{dev.name}} </option>
+          {% endfor %}
+      </select>
+      </form>
+    </li>
+      <br>
+      <br>
+      <li>
+        <form method="post" action="/display-device-info">
+        <input type="submit" value="Display Device Info"/>
+        </form>
+      </li>
+      <br>
+      <li>
+        <form method="post" action="/display-fpc-info">
+        <input  type="submit" value="Display FPC Info"/>
+        </form>
+      </li>
+      <br>
+      <li>
+        <form method="post" action="/display-all-cfg">
+        <input type="submit" value="Display All the Config"/>
+        </form>
+        <a href="#"></a>
+      </li>
+    </ul>
+  </nav>
+  <article>
+    <h1>Junos PyEZ</h1>
+    <p>Junos PyEZ is a Python library to remotely manage/automate Junos devices. The user is NOT required: (a) to be a "Software Programmer™", (b) have sophisticated knowledge of Junos, or (b) have a complex understanding of the Junos XML API.</p>
+    <br>
+    <h1>FEATURES</h1>
+    <p>Junos PyEZ is designed to provide the same capabilities as a user would have on the Junos CLI, but in an environment built for automation tasks. These capabilities include, but are not limited to:</p>
+      <p><tab1>Remote connectivity and management of Junos devices via NETCONF</tab1></p>
+      <p><tab1>Provide "facts" about the device such as software-version, serial-number, etc.</tab1></p>
+      <p><tab1>Retrieve "operational" or "run-state" information as Tables/Views</tab1></p>
+      <p><tab1>Retrieve configuration information as Tables/Views</tab1></p>
+      <p><tab1>Make configuration changes in unstructured and structured ways</tab1></p>
+      <p><tab1>Provide common utilities for tasks such as secure copy of files and software updates</tab1></p>
+  </article>
+  <footer><img src="../static/img/download.png" alt="Junos" width="10%" height="10%"></footer>
+  </div>
+
+  </body>
+  </html>
