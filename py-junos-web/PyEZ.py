@@ -84,7 +84,7 @@ class NetworkInfo(object):
 def return_NetworkRequirements(hostname):
 
     # Create our device object and assign the hostname or IP address, username and password
-    dev1 = Device( host=hostname, user='barbosar', password='Rbarbosa16#' )
+    dev1 = Device( host=hostname, user='r1', password='estrondeira!' )
     print "DEBITA A INFO CRL!"
     # Open a connection to the device. Please note, we're doing some very simple exception handling!
     dev1.open()
@@ -98,7 +98,7 @@ def return_NetworkRequirements(hostname):
 def return_FPC_Chassis_info(hostname):
 
     # Create our device object and assign the hostname or IP address, username and password
-    dev = Device( host=hostname, user='barbosar', password='Rbarbosa16#' )
+    dev = Device( host=hostname, user='r1f', password='Estrondeira!' )
     print "DEBITA A INFO FPC CRL!"
     dev.open()
 
@@ -119,7 +119,7 @@ def return_FPC_Chassis_info(hostname):
 def return_FPC_Status_info(hostname):
 
     # Create our device object and assign the hostname or IP address, username and password
-    dev = Device( host=hostname, user='barbosar', password='Rbarbosa16#' )
+    dev = Device( host=hostname, user='r1', password='Estrondeira' )
     print "DEBITA A INFO FPC CRL!"
     dev.open()
 
@@ -138,7 +138,7 @@ def return_FPC_Status_info(hostname):
 def return_all_config(hostname):
 
     # Create our device object and assign the hostname or IP address, username and password
-    dev = Device( host=hostname, user='barbosar', password='Rbarbosa16#' )
+    dev = Device( host=hostname, user='r1', password='Estrondeira!' )
     print "DEBITA A CONFIG CRL!"
     dev.open()
     cnf = dev.rpc.get_config()
